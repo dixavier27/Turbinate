@@ -8,10 +8,19 @@
     "dev": "tsx watch src/index.ts",
     "build": "tsup src"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "mongoose",
+    "mongodb",
+    "typescript"
+  ],
+  "author": "Affonso Xavier <dixavier27@gmail.com> (https://github.com/dixavier27)",
+  "license": "MIT",
+  "description": "Make your repository fly",
+  "homepage": "https://github.com/dixavier27/turbinate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dixavier27/turbinate"
+  },
   "devDependencies": {
     "@eslint/js": "^9.31.0",
     "@types/node": "^24.0.14",
