@@ -1,5 +1,5 @@
 {
-  "name": "turbinate",
+  "name": "@dixavier27/turbinate",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -19,7 +19,7 @@
   "homepage": "https://github.com/dixavier27/turbinate",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dixavier27/turbinate"
+    "url": "git+https://github.com/dixavier27/turbinate.git"
   },
   "devDependencies": {
     "@eslint/js": "^9.31.0",
@@ -33,5 +33,8 @@
   },
   "dependencies": {
     "mongoose": "^8.16.4"
+  },
+  "bugs": {
+    "url": "https://github.com/dixavier27/turbinate/issues"
   }
 }
