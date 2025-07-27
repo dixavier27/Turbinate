@@ -1,6 +1,6 @@
 import { AnyKeys, Document, Model, RootFilterQuery, Types, UpdateQuery } from "mongoose";
 
-export default interface iTurbinate<T> {
+export interface iTurbinate<T> {
   create(data: T): Promise<T>;
   update(filter: RootFilterQuery<T>, data: UpdateQuery<T>): Promise<T | null>;
   replace(_id: Types.ObjectId, data: T): Promise<T | null>;
