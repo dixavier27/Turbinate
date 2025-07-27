@@ -1,4 +1,4 @@
-// src/index.ts
+// src/Turbinate.ts
 var Turbinate = class {
   constructor(model, parentModel) {
     this.model = model;

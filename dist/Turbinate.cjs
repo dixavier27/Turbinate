@@ -17,12 +17,12 @@ var __copyProps = (to, from, except, desc) => {
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// src/index.ts
-var index_exports = {};
-__export(index_exports, {
+// src/Turbinate.ts
+var Turbinate_exports = {};
+__export(Turbinate_exports, {
   default: () => Turbinate
 });
-module.exports = __toCommonJS(index_exports);
+module.exports = __toCommonJS(Turbinate_exports);
 var Turbinate = class {
   constructor(model, parentModel) {
     this.model = model;

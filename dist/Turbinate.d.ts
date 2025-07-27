@@ -1,13 +1,6 @@
-import { RootFilterQuery, UpdateQuery, Types, Document, Model, AnyKeys } from 'mongoose';
+import { Model, RootFilterQuery, UpdateQuery, AnyKeys, Types, Document } from 'mongoose';
+import iTurbinate from './iTurbinate.js';
 
-interface iTurbinate<T> {
-    create(data: T): Promise<T>;
-    update(filter: RootFilterQuery<T>, data: UpdateQuery<T>): Promise<T | null>;
-    replace(_id: Types.ObjectId, data: T): Promise<T | null>;
-    read(filters: RootFilterQuery<T>): Promise<Document<T> | null>;
-    search(filters: RootFilterQuery<T>): Promise<T[]>;
-    remove(_id: Types.ObjectId): Promise<T | null>;
-}
 declare class Turbinate<T> implements iTurbinate<T> {
     protected model: Model<T>;
     protected parentModel?: Model<T> | undefined;
@@ -20,4 +13,4 @@ declare class Turbinate<T> implements iTurbinate<T> {
     remove(_id: Types.ObjectId): Promise<T | null>;
 }
 
-export { Turbinate as default, type iTurbinate };
+export { Turbinate as default };
